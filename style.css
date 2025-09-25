@@ -1,0 +1,128 @@
+body {
+  background-color: rgb(230, 228, 228);
+  display: flex;
+  justify-content: center;
+}
+#main_container {
+  width: 95%;
+  margin-top: 80px;
+  border-radius: 10px;
+  background-color: white;
+  min-height: 500px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+#main_container #img_1 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#secondary_conainer {
+  padding-left: 10%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+h2 {
+  letter-spacing: 5px;
+  font-family: "Inconsolata", monospace;
+  color: grey;
+}
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+p {
+  font-family: "Inconsolata", monospace;
+  color: grey;
+  line-height: 20px;
+}
+h3 #span_2 {
+  text-decoration: line-through;
+  font-family: "Inconsolata", monospace;
+  color: grey;
+}
+h3 #span_1 {
+  font-size: 30px;
+  font-family: "Young Serif", serif;
+  font-weight: bold;
+  color: hsl(158, 42%, 18%);
+}
+h3 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+#Btn {
+  background-color: hsl(158, 42%, 18%);
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Inconsolata", monospace;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#Btn:hover {
+  background-color: hsl(158, 36%, 37%);
+  transition: 0.2s;
+}
+#img_2 {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  #img_1 {
+    display: none;
+  }
+  #img_2 {
+    display: block !important;
+    width: 45%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  #main_container {
+    display: flex;
+    min-height: 500px;
+    padding-bottom: 0px;
+  }
+  #secondary_conainer {
+    margin-left: -5%;
+    width: 50%;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 900px) {
+  #main_container {
+    width: 70%;
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  #main_container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #main_container {
+    width: 50%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1800px) {
+    #main_container {
+      width: 40%;
+    }
+  }
+}
